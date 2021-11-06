@@ -28,3 +28,7 @@ $(document).ready(function () {
     slider.slick("slickGoTo", index);
   });
 });
+
+function textArea() {
+  document.getElementById("textarea").style.display = "initial";
+}

@@ -56,13 +56,13 @@ body {
       font-weight: 500; }
       .header .header-top .header-line ul li a {
         padding: 0px 5px;
-        transition: 0.5s ease; }
+        transition: 0.3s ease; }
     .header .header-top .header-line .header-top-menu {
       flex: 1 0 auto; }
     .header .header-top .header-line .header-top-number {
       padding-left: 50px; }
       .header .header-top .header-line .header-top-number .h5 {
-        transition: 0.5s ease; }
+        transition: 0.3s ease; }
     .header .header-top .header-line .header-top-group > * {
       display: inline-block;
       vertical-align: top; }
@@ -72,7 +72,10 @@ body {
       .header .header-top .header-line .header-top-group .icon-img {
         height: 21px; }
         .header .header-top .header-line .header-top-group .icon-img img {
-          max-height: 21px; }
+          max-height: 21px;
+          transition: 0.2s ease; }
+        .header .header-top .header-line .header-top-group .icon-img img:hover {
+          border: 1px solid #ffffff00; }
       .header .header-top .header-line .header-top-group .h5 {
         text-transform: uppercase;
         font-weight: 500;
@@ -304,14 +307,24 @@ body {
   .middle .main-form .right {
     height: 900px;
     width: 50%;
+    display: flex;
+    align-items: center;
     background-color: #091d67c0; }
     .middle .main-form .right .main-form-container {
       width: 545px;
       margin: 0 auto; }
       .middle .main-form .right .main-form-container div {
-        color: #ffffff;
-        text-align: center; }
-      .middle .main-form .right .main-form-container input {
+        color: #ffffff; }
+      .middle .main-form .right .main-form-container .h2 {
+        text-align: center;
+        text-transform: uppercase;
+        margin-bottom: 25px; }
+      .middle .main-form .right .main-form-container .mb {
+        text-align: center;
+        line-height: 25px;
+        vertical-align: middle;
+        margin-bottom: 50px; }
+      .middle .main-form .right .main-form-container .form-input {
         width: 100%;
         border: none;
         outline: none;
@@ -319,8 +332,179 @@ body {
         border-bottom: 2px solid #ffffff;
         caret-color: #ffffff;
         color: #ffffff;
-        padding: 0px 0px 5px 10px; }
+        padding: 0px 0px 5px 10px;
+        margin-bottom: 50px; }
       .middle .main-form .right .main-form-container ::placeholder {
         color: #ffffff; }
+      .middle .main-form .right .main-form-container .form-btn-group {
+        margin-bottom: 55px; }
+        .middle .main-form .right .main-form-container .form-btn-group .btn-group-add {
+          display: inline-block;
+          margin-right: 20px;
+          margin-bottom: 45px; }
+          .middle .main-form .right .main-form-container .form-btn-group .btn-group-add button {
+            height: 26px;
+            width: 26px;
+            border: 2px solid #ffffff;
+            background: transparent;
+            margin-right: 20px;
+            vertical-align: middle; }
+          .middle .main-form .right .main-form-container .form-btn-group .btn-group-add :hover .cross {
+            width: 10px; }
+          .middle .main-form .right .main-form-container .form-btn-group .btn-group-add :hover .cross:after {
+            height: 10px; }
+          .middle .main-form .right .main-form-container .form-btn-group .btn-group-add input[type="file"] {
+            display: none; }
+          .middle .main-form .right .main-form-container .form-btn-group .btn-group-add .custom-file-upload {
+            position: absolute;
+            transform: translate(-50%, -50%);
+            top: 50%;
+            left: 50%;
+            height: 26px;
+            width: 26px;
+            display: inline-block;
+            cursor: pointer;
+            opacity: 0; }
+          .middle .main-form .right .main-form-container .form-btn-group .btn-group-add .cross {
+            background: #ffffff;
+            height: 2px;
+            width: 14px;
+            position: relative;
+            margin: 0 auto; }
+          .middle .main-form .right .main-form-container .form-btn-group .btn-group-add .cross:after {
+            content: "";
+            height: 14px;
+            width: 2px;
+            background: #ffffff;
+            position: absolute;
+            transform: translate(-50%, -50%);
+            top: 50%;
+            left: 50%; }
+          .middle .main-form .right .main-form-container .form-btn-group .btn-group-add .p {
+            display: inline-block; }
+        .middle .main-form .right .main-form-container .form-btn-group textarea {
+          display: none;
+          width: 100%;
+          height: 188px;
+          resize: none;
+          border: 2px solid #ffffff;
+          color: #ffffff;
+          background: transparent;
+          font-family: "Oswald", sans-serif;
+          font-size: 18px;
+          line-height: 30px;
+          padding: 10px; }
+        .middle .main-form .right .main-form-container .form-btn-group textarea:focus,
+        .middle .main-form .right .main-form-container .form-btn-group input:focus {
+          outline: 0; }
+      .middle .main-form .right .main-form-container .main-form-submit {
+        position: relative;
+        width: 100%;
+        height: 70px;
+        border: none;
+        margin-bottom: 40px;
+        font-size: 18px;
+        font-weight: 700;
+        color: #1c379b;
+        transition: 0.5s ease; }
+      .middle .main-form .right .main-form-container .main-form-submit:hover {
+        background: #1c379b;
+        color: #ffffff;
+        border: 1px solid #ffffff; }
+      .middle .main-form .right .main-form-container .form-checkbox [type="checkbox"],
+      .middle .main-form .right .main-form-container .form-checkbox [type="radio"] {
+        width: 26px;
+        height: 26px;
+        vertical-align: middle;
+        margin-right: 20px; }
+      .middle .main-form .right .main-form-container .form-checkbox span {
+        font-size: 14px;
+        color: #ffffff;
+        font-weight: 500;
+        font-style: normal;
+        font-family: "Montserrat", sans-serif;
+        vertical-align: middle; }
+
+.footer {
+  height: 385px;
+  width: 100%;
+  background-color: #0b194e; }
+  .footer .footer-menu {
+    height: 290px;
+    border-bottom: 1px solid #ffffff34;
+    padding-top: 70px; }
+    .footer .footer-menu .col-footer-contact {
+      padding-right: 30px; }
+      .footer .footer-menu .col-footer-contact .footer-contact-logo {
+        min-height: 40px;
+        margin-bottom: 40px; }
+        .footer .footer-menu .col-footer-contact .footer-contact-logo img {
+          height: 40px; }
+      .footer .footer-menu .col-footer-contact .contact-link {
+        position: relative;
+        padding-left: 42px;
+        min-height: 32px;
+        line-height: 32px;
+        margin-bottom: 7px; }
+        .footer .footer-menu .col-footer-contact .contact-link img {
+          position: absolute;
+          width: 32px;
+          height: 32px;
+          top: 0;
+          left: 0; }
+        .footer .footer-menu .col-footer-contact .contact-link a {
+          color: #ffffff; }
+    .footer .footer-menu .col-footer-menu {
+      padding-right: 30px; }
+      .footer .footer-menu .col-footer-menu a {
+        color: #ffffff; }
+      .footer .footer-menu .col-footer-menu a:hover {
+        color: #dfd2d2; }
+      .footer .footer-menu .col-footer-menu ul {
+        margin-bottom: 40px; }
+        .footer .footer-menu .col-footer-menu ul li {
+          display: inline-block;
+          color: #ffffff;
+          text-transform: uppercase;
+          font-family: "Oswald", sans-serif;
+          font-weight: 300;
+          padding: 10px 50px 10px 0px; }
+      .footer .footer-menu .col-footer-menu .p {
+        color: #ffffff4b;
+        font-size: 13px;
+        line-height: 16px;
+        margin-bottom: 45px; }
+      .footer .footer-menu .col-footer-menu .footer-menu-social img {
+        margin-right: 12px; }
+    .footer .footer-menu .col-footer-list ul {
+      width: 100%;
+      padding-top: 10px;
+      margin-bottom: 50px; }
+      .footer .footer-menu .col-footer-list ul li {
+        display: inline-block;
+        width: 32%;
+        margin-bottom: 18px;
+        padding-right: 20px;
+        white-space: nowrap; }
+        .footer .footer-menu .col-footer-list ul li a {
+          font-size: 14px;
+          color: #ffffff; }
+        .footer .footer-menu .col-footer-list ul li a:hover {
+          color: #dfd2d2; }
+    .footer .footer-menu .col-footer-list .p {
+      color: #ffffff56;
+      font-size: 13px;
+      text-align: end; }
+  .footer .footer-logo {
+    height: 95px;
+    margin: 0 auto;
+    padding-top: 40px; }
+    .footer .footer-logo p {
+      text-align: center;
+      color: #ffffff;
+      vertical-align: middle; }
+      .footer .footer-logo p img {
+        padding: 0px 20px 20px 20px;
+        vertical-align: middle; }
 
 /*# sourceMappingURL=style.css.map */
