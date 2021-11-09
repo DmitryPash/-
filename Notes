@@ -5,5 +5,37 @@ href = "#"
 alt = "alt"
 
 
+адаптив {
+   header = {
+      top-header = +
+      bot-header = +
+      burger = + (доделать)
+   }
+   main  = {
+       main-content = ++++++++++++++++++
+       main-categories = 
+       main-manufacturs = ++++++++++++++
+       main-slider = 
+       main-object = 
+       main-services = 
+       main-form = 
+   }
+   footer = {
+      footer-menu = 
+      footer-logo =
+   }
+}
 
+бургер = +
 слайдер 
+
+18 - пунтк ТЗ
+21 - пункт ТЗ
+22 - пункт ТЗ
+
+
+Qastion??? 
+
+   header {
+      header-top-number: отсупы по правой стороне(выходит текст и бургер как сделать нормально)?
+   }

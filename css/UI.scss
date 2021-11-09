@@ -25,7 +25,12 @@ img {
   max-width: 100%;
   height: auto;
 }
-
+[class*="-p"] {
+  font-family: $ffMontserrat;
+  font-weight: 400;
+  @include fontSize(16px);
+  color: $colorBlue;
+}
 p,
 .p {
   font-family: $ffMontserrat;
@@ -33,7 +38,12 @@ p,
   @include fontSize(16px);
   color: $colorBlue;
 }
-
+[class*="-h1"] {
+  font-family: $ffOswald;
+  font-weight: 500;
+  @include fontSize(76px);
+  color: $colorBlue;
+}
 h1,
 .h1 {
   font-family: $ffOswald;
@@ -41,7 +51,12 @@ h1,
   @include fontSize(76px);
   color: $colorBlue;
 }
-
+[class*="-h2"] {
+  font-family: $ffOswald;
+  font-weight: 500;
+  @include fontSize(46px);
+  color: $colorBlue;
+}
 h2,
 .h2 {
   font-family: $ffOswald;
@@ -49,7 +64,12 @@ h2,
   @include fontSize(46px);
   color: $colorBlue;
 }
-
+[calss*="-h3"] {
+  font-family: $ffOswald;
+  font-weight: 500;
+  @include fontSize(32px);
+  color: $colorBlue;
+}
 h3,
 .h3 {
   font-family: $ffOswald;
@@ -58,6 +78,12 @@ h3,
   color: $colorBlue;
 }
 
+[class*="-h4"] {
+  font-family: $ffOswald;
+  font-weight: 400;
+  @include fontSize(24px);
+  color: $colorBlue;
+}
 h4,
 .h4 {
   font-family: $ffOswald;
@@ -65,7 +91,12 @@ h4,
   @include fontSize(24px);
   color: $colorBlue;
 }
-
+[class*="-h5"] {
+  font-family: $ffOswald;
+  font-weight: 400;
+  @include fontSize(20px);
+  color: $colorBlue;
+}
 h5,
 .h5 {
   font-family: $ffOswald;
@@ -147,7 +178,8 @@ input:focus:-ms-input-placeholder {
   flex-flow: row wrap;
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
-  flex-wrap: nowrap;
+  margin-left: -15px;
+  margin-right: -15px;
 }
 .align-center {
   -webkit-box-align: center;
@@ -155,6 +187,12 @@ input:focus:-ms-input-placeholder {
   -ms-flex-align: center;
   -ms-align-items: center;
   align-items: center;
+}
+
+[class*="col-"] {
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .col-footer-contact {
@@ -174,122 +212,120 @@ input:focus:-ms-input-placeholder {
 }
 
 // 12-column
-@media (max-width: 3000px) {
-  .col-1 {
-    -ms-flex: 0 0 8.33333%;
-    flex: 0 0 8.33333%;
-    max-width: 8.33333%;
-  }
 
-  .col-2 {
-    -ms-flex: 0 0 16.66667%;
-    flex: 0 0 16.66667%;
-    max-width: 16.66667%;
-  }
+.col-1 {
+  -ms-flex: 0 0 8.33333%;
+  flex: 0 0 8.33333%;
+  max-width: 8.33333%;
+}
 
-  .col-3 {
-    -ms-flex: 0 0 25%;
-    flex: 0 0 25%;
-    max-width: 25%;
-  }
+.col-2 {
+  -ms-flex: 0 0 16.66667%;
+  flex: 0 0 16.66667%;
+  max-width: 16.66667%;
+}
 
-  .col-4 {
-    -ms-flex: 0 0 33.33333%;
-    flex: 0 0 33.33333%;
-    max-width: 33.33333%;
-  }
+.col-3 {
+  -ms-flex: 0 0 25%;
+  flex: 0 0 25%;
+  max-width: 25%;
+}
 
-  .col-5 {
-    -ms-flex: 0 0 41.66667%;
-    flex: 0 0 41.66667%;
-    max-width: 41.66667%;
-  }
+.col-4 {
+  -ms-flex: 0 0 33.33333%;
+  flex: 0 0 33.33333%;
+  max-width: 33.33333%;
+}
 
-  .col-6 {
-    -ms-flex: 0 0 50%;
-    flex: 0 0 50%;
-    max-width: 50%;
-  }
+.col-5 {
+  -ms-flex: 0 0 41.66667%;
+  flex: 0 0 41.66667%;
+  max-width: 41.66667%;
+}
 
-  .col-7 {
-    -ms-flex: 0 0 58.33333%;
-    flex: 0 0 58.33333%;
-    max-width: 58.33333%;
-  }
+.col-6 {
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
+  max-width: 50%;
+}
 
-  .col-8 {
-    -ms-flex: 0 0 66.66667%;
-    flex: 0 0 66.66667%;
-    max-width: 66.66667%;
-  }
+.col-7 {
+  -ms-flex: 0 0 58.33333%;
+  flex: 0 0 58.33333%;
+  max-width: 58.33333%;
+}
 
-  .col-9 {
-    -ms-flex: 0 0 75%;
-    flex: 0 0 75%;
-    max-width: 75%;
-  }
+.col-8 {
+  -ms-flex: 0 0 66.66667%;
+  flex: 0 0 66.66667%;
+  max-width: 66.66667%;
+}
 
-  .col-10 {
-    -ms-flex: 0 0 83.33333%;
-    flex: 0 0 83.33333%;
-    max-width: 83.33333%;
-  }
+.col-9 {
+  -ms-flex: 0 0 75%;
+  flex: 0 0 75%;
+  max-width: 75%;
+}
 
-  .col-11 {
-    -ms-flex: 0 0 91.66667%;
-    flex: 0 0 91.66667%;
-    max-width: 91.66667%;
-  }
+.col-10 {
+  -ms-flex: 0 0 83.33333%;
+  flex: 0 0 83.33333%;
+  max-width: 83.33333%;
+}
 
-  .col-12 {
-    -ms-flex: 0 0 100%;
-    flex: 0 0 100%;
-    max-width: 100%;
-  }
+.col-11 {
+  -ms-flex: 0 0 91.66667%;
+  flex: 0 0 91.66667%;
+  max-width: 91.66667%;
+}
+
+.col-12 {
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  max-width: 100%;
 }
 /* 10-column */
-@media (max-width: 3000px) {
-  .col-xl-1 {
-    flex: 0 0 10%;
-    max-width: 10%;
-  }
-  .col-xl-2 {
-    flex: 0 0 20%;
-    max-width: 20%;
-  }
 
-  .col-xl-3 {
-    flex: 0 0 30%;
-    max-width: 30%;
-  }
-  .col-xl-4 {
-    flex: 0 0 40%;
-    max-width: 40%;
-  }
-  .col-xl-5 {
-    flex: 0 0 50%;
-    max-width: 50%;
-  }
-  .col-xl-6 {
-    flex: 0 0 60%;
-    max-width: 60%;
-  }
-  .col-xl-7 {
-    flex: 0 0 70%;
-    max-width: 70%;
-  }
-  .col-xl-8 {
-    flex: 0 0 80%;
-    max-width: 80%;
-  }
-  .col-xl-9 {
-    flex: 0 0 90%;
-    max-width: 90%;
-  }
-  .col-xl-10 {
-    flex: 0 0 100%;
-    max-width: 100%;
-  }
+.col-xl-1 {
+  flex: 0 0 10%;
+  max-width: 10%;
+}
+.col-xl-2 {
+  flex: 0 0 20%;
+  max-width: 20%;
+}
+
+.col-xl-3 {
+  flex: 0 0 30%;
+  max-width: 30%;
+}
+.col-xl-4 {
+  flex: 0 0 40%;
+  max-width: 40%;
+}
+.col-xl-5 {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+.col-xl-6 {
+  flex: 0 0 60%;
+  max-width: 60%;
+}
+.col-xl-7 {
+  flex: 0 0 70%;
+  max-width: 70%;
+}
+.col-xl-8 {
+  flex: 0 0 80%;
+  max-width: 80%;
+}
+.col-xl-9 {
+  flex: 0 0 90%;
+  max-width: 90%;
+}
+.col-xl-10 {
+  flex: 0 0 100%;
+  max-width: 100%;
 }
 
 @media (max-width: 1330px) {
