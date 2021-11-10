@@ -16,70 +16,17 @@
       integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
     <link rel="stylesheet" href="./css/style.css" />
     <title>ВитражПроект</title>
   </head>
   <body>
     <div class="wrapper" id="wrapper">
       <!--#include file="header.html"-->
-      <header class="header" id="header">
-        <div class="header-top">
-          <div class="container">
-            <div class="header-line">
-              <div class="header-line-logo">
-                <a href="#">
-                  <img src="./images/icons/logo.svg" alt="alt" />
-                </a>
-              </div>
-              <div class="header-top-menu">
-                <ul>
-                  <li><a href="#">О нас</a></li>
-                  <li><a href="#">Фотогалерея</a></li>
-                  <li><a href="#">Контакты</a></li>
-                </ul>
-              </div>
-              <div class="header-top-number">
-                <div class="row">
-                  <div class="header-top-group">
-                    <a class="header-top-img">
-                      <img src="./images/icons/mail-header.svg" alt="alt" />
-                    </a>
-                    <a class="header-top-h5">vtproekt@mail.ru</a>
-                  </div>
-                  <div class="header-top-group">
-                    <a class="header-top-img viber">
-                      <img src="./images/icons/viber.svg" alt="alt" />
-                    </a>
-                    <a class="header-top-img">
-                      <img src="./images/icons/telegram.svg" alt="alt" />
-                    </a>
-                    <a href="#" class="header-top-h5">+375 (29) 624-86-02</a>
-                    <span>или <a href="#"> закажите обратный звонок</a></span>
-                  </div>
-                </div>
-              </div>
-              <div class="header-menu-toggle"></div>
-            </div>
-          </div>
-        </div>
-        <div class="header-menu">
-          <div class="container">
-            <nav class="nav-menu">
-              <ul class="flex-ul">
-                <li class="menu-elem"><a href="#">Окна</a></li>
-                <li class="menu-elem"><a href="#">Двери </a></li>
-                <li class="menu-elem"><a href="#">Фасады</a></li>
-                <li class="menu-elem"><a href="#">Балконы</a></li>
-                <li class="menu-elem"><a href="#">Зимние сады</a></li>
-                <li class="menu-elem"><a href="#">Раздвижные двери</a></li>
-                <li class="menu-elem"><a href="#">Зенитные фонари</a></li>
-                <li class="menu-elem"><a href="#">перегородки</a></li>
-                <li class="menu-elem"><a href="#">Окна ПВХ</a></li>
-              </ul>
-            </nav>
-          </div>
-        </div>
-      </header>
       <!-- End Header -->
       <div class="middle" id="middle">
         <div class="main-content">
@@ -218,27 +165,45 @@
             </div>
           </div>
         </div>
-        <!-- <div class="main-slider">
+        <div class="main-slider">
           <div class="container">
+            <div class="slider-title">
+              <div class="slider-title-h2">
+                Алюминиевые конструкции <span>под ключ</span>
+              </div>
+              <div class="slider-title-p">Материалы и дополнительные опции</div>
+            </div>
             <div class="row">
-              <div class="slider-nav"></div>
-              <div class="slider">
-                <div class="slider__item" data-name="Стеклопакеты">
-                  <img src="./images/examples/carousel-1.png" alt="alt" />
+              <div class="col-4 slider-row">
+                <div class="slider-nav"></div>
+              </div>
+              <div class="col-8 col-sm-12 slider-position">
+                <div class="slider">
+                  <div class="slider__item" data-name="Стеклопакеты">
+                    <img src="./images/examples/carousel-2.png" alt="" />
+                  </div>
+                  <div class="slider__item" data-name="Фурнитура и механизмы">
+                    <img src="./images/examples/carousel-1.png" alt="" />
+                  </div>
+                  <div class="slider__item" data-name="Автоматика">
+                    <img src="./images/examples/carousel-2.png" alt="" />
+                  </div>
+                  <div class="slider__item" data-name="Замки">
+                    <img src="./images/examples/carousel-1.png" alt="" />
+                  </div>
                 </div>
-                <div class="slider__item" data-name="Фурнитура и механизмы">
-                  <img src="./images/examples/carousel-2.png" alt="alt" />
-                </div>
-                <div class="slider__item" data-name="Автоматика">
-                  <img src="./images/examples/carousel-1.png" alt="alt" />
-                </div>
-                <div class="slider__item" data-name="Замки">
-                  <img src="./images/examples/carousel-2.png" alt="alt" />
+                <div class="arrow">
+                  <span class="prev-arrow"
+                    ><i class="fas fa-angle-left"></i
+                  ></span>
+                  <span class="prev-arrow"
+                    ><i class="fas fa-angle-right"></i
+                  ></span>
                 </div>
               </div>
             </div>
           </div>
-        </div> -->
+        </div>
         <div class="main-object">
           <div class="container">
             <div class="main-object-h2">работаем на любых объектах</div>
@@ -480,21 +445,6 @@
             </div>
           </div>
         </div>
-        <!-- <div class="main-services">
-          <div class="container">
-            <div class="main-services-right">
-              <div class="services-img">
-                <img src="" alt="" />
-              </div>
-              <div class="srvices-text">
-                <div class="h4">01</div>
-                <div class="h3">osakdfpoakw</div>
-                <div class="p">qoifjhqoiwjhfqoiwfhjqowifhjqowfjhqowij</div>
-              </div>
-            </div>
-            <div class="main-services-left">2</div>
-          </div>
-        </div> -->
         <div class="main-form">
           <div class="main-form-left"></div>
           <div class="main-form-right">
@@ -554,76 +504,6 @@
       </div>
       <!-- End Main -->
       <!--#include file="footer.html"-->
-      <div class="footer" id="footer">
-        <div class="footer-menu">
-          <div class="container">
-            <div class="row">
-              <div class="col-footer-contact">
-                <div class="footer-contact-logo">
-                  <img src="./images/icons/footer-logo.svg" alt="alt" />
-                </div>
-                <div class="contact-link">
-                  <img src="./images/icons/footer-phone.png" alt="alt" />
-                  <a href="tel:+375296248602">+375 (29) 624-86-02</a>
-                </div>
-                <div class="contact-link">
-                  <img src="./images/icons/footer-mail.png" alt="alt" />
-                  <a href="#">vtproekt@mail.ru</a>
-                </div>
-                <div class="contact-link">
-                  <img src="./images/icons/footer-location.png" alt="alt" />
-                  <a href="#">г. Минск, Свислочская, 11</a>
-                </div>
-              </div>
-              <div class="col-footer-menu">
-                <ul>
-                  <li><a href="">О нас</a></li>
-                  <li><a href="">Фотогалерея</a></li>
-                  <li><a href="">Контакты</a></li>
-                </ul>
-                <div class="footer-menu-p">
-                  Работаем с алюминиевым профилем<br />от лучших производителей
-                  России и Беларуси
-                </div>
-                <div class="footer-menu-social">
-                  <a href="#"
-                    ><img src="./images/icons/footer-telegram.png" alt="alt"
-                  /></a>
-                  <a href="#">
-                    <img src="./images/icons/footer-viber.png" alt="alt"
-                  /></a>
-                  <a href="#"
-                    ><img src="./images/icons/footer-whatsApp.png" alt="alt"
-                  /></a>
-                </div>
-              </div>
-              <div class="col-footer-list">
-                <ul>
-                  <li><a href="#">Окна</a></li>
-                  <li><a href="#">Раздвижные двери</a></li>
-                  <li><a href="#">Окна ПВХ</a></li>
-                  <li><a href="#">Двери</a></li>
-                  <li><a href="#">Балконы</a></li>
-                  <li><a href="#">Перегородки</a></li>
-                  <li><a href="#">Фасады</a></li>
-                  <li><a href="#">Зимние сады</a></li>
-                  <li><a href="#">Зенитные фонари</a></li>
-                </ul>
-                <div class="footer-list-p">ВитражПроект © 2020</div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="footer-logo">
-          <div class="footer-logo-p">
-            Разработка сайта<img
-              src="./images/icons/footer-down-logo.png"
-              alt="alt"
-            />
-            Farba Studio
-          </div>
-        </div>
-      </div>
     </div>
 
     <script

@@ -250,7 +250,53 @@ body {
       .middle .main-manufacturs-sponsor .sponsor-img img:hover {
         transform: translate(-50%, -50%) scale(1.1); }
 .middle .main-slider {
-  position: relative; }
+  margin-bottom: 180px; }
+  .middle .main-slider .slider-title {
+    margin-bottom: 85px; }
+    .middle .main-slider .slider-title-h2 {
+      text-transform: uppercase;
+      text-align: center;
+      margin-bottom: 25px; }
+      .middle .main-slider .slider-title-h2 span {
+        color: #1c379b; }
+    .middle .main-slider .slider-title-p {
+      text-align: center; }
+  .middle .main-slider .slider-row {
+    display: flex;
+    justify-content: center; }
+    .middle .main-slider .slider-row .slider-nav {
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+    .middle .main-slider .slider-row .slider-nav-link {
+      font-family: "Oswald", sans-serif;
+      font-weight: 400;
+      font-size: 24px;
+      color: #1c379b;
+      opacity: 30%;
+      text-transform: uppercase;
+      padding: 15px 0px;
+      padding-left: 65px;
+      border-left: 2px solid; }
+    .middle .main-slider .slider-row .slider-nav-link:hover {
+      opacity: 100%; }
+  .middle .main-slider .slider-position {
+    position: relative; }
+  .middle .main-slider .arrow {
+    position: absolute;
+    top: -5%;
+    right: 5%;
+    z-index: 1; }
+    .middle .main-slider .arrow .prev-arrow {
+      font-size: 35px;
+      color: #ffffff;
+      background-color: #1c379b;
+      height: 58px;
+      width: 59px;
+      text-align: center;
+      display: table-cell;
+      vertical-align: middle;
+      cursor: pointer; }
 .middle .main-object {
   min-height: 804px;
   display: flex;
@@ -476,13 +522,11 @@ body {
         vertical-align: middle; }
 
 .footer {
-  height: 385px;
   width: 100%;
   background-color: #0b194e; }
   .footer .footer-menu {
-    height: 290px;
-    border-bottom: 1px solid #ffffff34;
-    padding-top: 70px; }
+    margin-top: 70px;
+    margin-bottom: 60px; }
     .footer .footer-menu .col-footer-contact {
       padding-right: 30px; }
       .footer .footer-menu .col-footer-contact .footer-contact-logo {
@@ -546,9 +590,9 @@ body {
       font-size: 13px;
       text-align: end; }
   .footer .footer-logo {
-    height: 95px;
     margin: 0 auto;
-    padding-top: 40px; }
+    border-top: 1px solid #ffffff34;
+    padding-top: 20px; }
     .footer .footer-logo-p {
       text-align: center;
       color: #ffffff;
@@ -559,7 +603,10 @@ body {
 
 @media (max-width: 1330px) {
   .h4 {
-    font-size: 1.3rem; } }
+    font-size: 1.3rem; }
+
+  .middle .main-slider .arrow {
+    right: 0%; } }
 @media (max-width: 1170px) {
   .container {
     max-width: 1070px; }
@@ -580,7 +627,11 @@ body {
     display: none; }
 
   .middle .main-form-right {
-    width: 100%; } }
+    width: 100%; }
+
+  .col-footer-list {
+    margin-top: 30px;
+    text-align: center; } }
 @media (max-width: 992px) {
   .container {
     max-width: 890px; }
@@ -642,6 +693,14 @@ body {
     margin-right: 0;
     margin-left: 0; }
 
+  .middle .main-slider .slider-row {
+    display: none; }
+
+  .middle .main-slider .arrow .prev-arrow {
+    font-size: 30px;
+    height: 50px;
+    width: 51px; }
+
   .middle .main-form-right .main-form-container {
     padding-right: 20px;
     padding-left: 20px; } }
@@ -665,8 +724,28 @@ body {
   .middle .main-manufacturs-h2 {
     font-size: 2.375rem; }
 
+  .middle .main-slider .arrow .prev-arrow {
+    font-size: 28px;
+    height: 45px;
+    width: 46px; }
+
   .services-card-img {
-    display: none; } }
+    display: none; }
+
+  .footer .footer-menu .col-footer-contact {
+    margin-bottom: 30px; }
+
+  .footer .footer-menu .col-footer-menu ul {
+    margin-bottom: 10px; }
+
+  .footer .footer-menu .col-footer-list ul li {
+    width: 45%; }
+
+  .footer .footer-menu .col-footer-menu .footer-menu-p {
+    margin-bottom: 10px; }
+
+  .col-footer-list {
+    text-align: left; } }
 @media (max-width: 400px) {
   .container {
     max-width: 100%; }
