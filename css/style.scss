@@ -92,7 +92,7 @@ body {
         flex: 1 0 auto;
         ul li {
           display: inline-block;
-          margin-right: 50px;
+          margin-right: 40px;
           @include fontSize(14px);
           font-weight: 500;
           a {
@@ -119,7 +119,7 @@ body {
         .header-top-group {
           position: relative;
           white-space: nowrap;
-          margin-left: 40px;
+          margin-left: 35px;
           padding-left: 14px;
           text-align: end;
           .header-top-img {
@@ -165,7 +165,8 @@ body {
       .header-menu-toggle {
         display: none;
         height: 3px;
-        width: 30px;
+        flex: 0 0 30px;
+        max-width: 30px;
         background-color: #1c379b;
         position: relative;
       }
@@ -852,6 +853,18 @@ body {
   .header .header-top .header-line .header-top-group .h5 {
     font-size: 18px;
   }
+  .header .header-top .header-line .header-top-number .header-top-group {
+    margin-left: 0;
+    padding-left: 0;
+  }
+  .header
+    .header-top
+    .header-line
+    .header-top-number
+    .header-top-group
+    .header-top-img {
+    display: none;
+  }
   // End Header
 
   // Main
@@ -904,11 +917,26 @@ body {
   .header-top-number {
     margin-right: 30px;
   }
+  .header .header-top .header-line-logo {
+    margin-right: 20px;
+  }
   .header .header-top .header-line .header-menu-toggle {
     display: inline-block;
   }
   .header-menu {
     display: none;
+  }
+  .header
+    .header-top
+    .header-line
+    .header-top-number
+    .header-top-group
+    .header-top-img {
+    display: inline-block;
+  }
+  .header .header-top .header-line .header-top-number .header-top-group {
+    margin-left: 35px;
+    padding-left: 14px;
   }
 
   // End Header
