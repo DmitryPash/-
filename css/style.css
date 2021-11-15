@@ -5,12 +5,6 @@
   padding: 0;
   box-sizing: border-box; }
 
-html {
-  font-size: 16px; }
-
-body {
-  font-size: 16px; }
-
 html,
 body {
   height: 100%;
@@ -138,19 +132,45 @@ body {
       height: 3px;
       width: 30px;
       background: #1c379b; }
-.header .header-menu .nav-menu .flex-ul {
-  display: flex;
-  align-items: center;
-  justify-content: space-between; }
-.header .header-menu .nav-menu a {
-  display: inline-block;
-  vertical-align: middle;
-  text-align: center;
-  padding: 24px 10px;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 600;
-  text-transform: uppercase;
-  transition: 0.5s ease; }
+.header .header-menu {
+  overflow: auto; }
+  .header .header-menu .nav-menu .flex-ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+  .header .header-menu .nav-menu a {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    padding: 24px 10px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: 0.5s ease;
+    z-index: 1; }
+  .header .header-menu .nav-menu a::before,
+  .header .header-menu .nav-menu a::after {
+    content: "";
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    transform-origin: center; }
+  .header .header-menu .nav-menu a::before {
+    border-top: 0.2em solid #000;
+    border-bottom: 0.2em solid #000;
+    transform: scale3d(0, 1, 1); }
+  .header .header-menu .nav-menu a::after {
+    border-left: 0.2em solid #000;
+    border-right: 0.2em solid #000;
+    transform: scale3d(1, 0, 1); }
+  .header .header-menu .nav-menu a:hover::before,
+  .header .header-menu .nav-menu a:hover::after {
+    transform: scale3d(1, 1, 1);
+    transition: transform 900ms; }
 
 .middle .main-content {
   display: flex;
@@ -402,7 +422,8 @@ body {
     height: 900px;
     width: 50%; }
   .middle .main-form-right {
-    height: 900px;
+    padding-top: 120px;
+    padding-bottom: 120px;
     width: 50%;
     display: flex;
     align-items: center;
@@ -612,14 +633,14 @@ body {
   .container {
     max-width: 1070px; }
 
-  .header .header-top .header-line .header-top-number .row {
-    justify-content: start; }
-
   .header .header-top .header-line .header-top-menu ul li {
     margin-right: 15px; }
 
   .header .header-top .header-line .logo {
     margin-right: 30px; }
+
+  .header .header-top .header-line-logo {
+    margin-right: 40px; }
 
   .header .header-top .header-line .header-top-group .h5 {
     font-size: 18px; }
@@ -660,6 +681,9 @@ body {
 
   .h4 {
     font-size: 1rem; }
+
+  .header .header-top .header-line .header-top-number .row {
+    justify-content: start; }
 
   .header .header-top .header-line {
     justify-content: space-between; }
@@ -703,6 +727,21 @@ body {
   .middle .main-services .services-card-object .object-right,
   .middle .main-services .services-card-object .object-left {
     display: none; } }
+@media (max-width: 840px) {
+  .header
+  .header-top
+  .header-line
+  .header-top-number
+  .header-top-group
+  .header-top-img {
+    display: none; }
+
+  .header .header-top .header-line .header-top-number .header-top-group {
+    margin: 0px 5px;
+    padding-left: 0; }
+
+  .header-top-group.mail {
+    display: none; } }
 @media (max-width: 768px) {
   .container {
     max-width: 670px; }
@@ -736,6 +775,15 @@ body {
   .container {
     max-width: 470px; }
 
+  .header .header-top .header-line {
+    justify-content: center; }
+
+  .header-top-group.phone {
+    display: none; }
+
+  .header .header-top .header-line-logo {
+    margin: 0px; }
+
   .main-content {
     text-align: center; }
 
@@ -760,6 +808,9 @@ body {
   .services-card-img {
     display: none; }
 
+  .middle .main-form-right .main-form-container .main-form-h2 {
+    font-size: 2.5rem; }
+
   .footer .footer-menu .col-footer-contact {
     margin-bottom: 30px; }
 
@@ -783,6 +834,9 @@ body {
 
   .h3 {
     font-size: 1.05rem; }
+
+  .middle .main-content-h1 {
+    font-size: 2.5rem; }
 
   .middle .main-manufacturs-h2 {
     margin-bottom: 0;

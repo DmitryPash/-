@@ -7,27 +7,32 @@ alt = "alt"
 
 адаптив {
    header = {
-      top-header = +
-      bot-header = +
-      burger = + (доделать)
+      top-header = +++++++++++++++
+      bot-header = +++++++++++++++
+      burger = +++++++++++++++++++
    }
    main  = {
        main-content = ++++++++++++++++++
-       main-categories = 
+       main-categories = +++++++++++++++
        main-manufacturs = ++++++++++++++
-       main-slider = 
-       main-object = 
-       main-services = 
-       main-form = 
+       main-slider = +++++++++++++++++++ (можно лучше)
+       main-object = +++++++++++++++++++
+       main-services = +++++++++++++++++
+       main-form = +++++++++++++++++++++
    }
    footer = {
-      footer-menu = 
-      footer-logo =
+      footer-menu = ++++++++++++++++++++
+      footer-logo = ++++++++++++++++++++
    }
+} 
+
+доработки {
+   бургер = ++++++++++
+   слайдер = сделать текст над кратинками (display: absolute)
+   main-slider = activ повесить на выбронный елемент (код у нс-сервиса?)
 }
 
-бургер = +
-слайдер 
+
 
 18 - пунтк ТЗ
 21 - пункт ТЗ
@@ -35,7 +40,5 @@ alt = "alt"
 
 
 Qastion??? 
-
-   header {
-      header-top-number: отсупы по правой стороне(выходит текст и бургер как сделать нормально)?
-   }
+   
+  main-slider = activ повесить на выбронный елемент (код у нс-сервиса?)

@@ -22,13 +22,6 @@ $colorBlue: #0e1636;
   padding: 0;
   box-sizing: border-box;
 }
-html {
-  font-size: 16px;
-}
-body {
-  font-size: $fontSize;
-  // line-height: ;
-}
 
 html,
 body {
@@ -189,6 +182,7 @@ body {
     }
   }
   .header-menu {
+    overflow: auto;
     .nav-menu {
       .flex-ul {
         display: flex;
@@ -197,6 +191,7 @@ body {
       }
 
       a {
+        position: relative;
         display: inline-block;
         vertical-align: middle;
         text-align: center;
@@ -205,7 +200,76 @@ body {
         font-weight: 600;
         text-transform: uppercase;
         transition: 0.5s ease;
+        z-index: 1;
       }
+
+      a::before,
+      a::after {
+        content: "";
+        box-sizing: border-box;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        transform-origin: center;
+      }
+      a::before {
+        border-top: 0.2em solid #000;
+        border-bottom: 0.2em solid #000;
+        transform: scale3d(0, 1, 1);
+      }
+
+      a::after {
+        border-left: 0.2em solid #000;
+        border-right: 0.2em solid #000;
+        transform: scale3d(1, 0, 1);
+      }
+
+      a:hover::before,
+      a:hover::after {
+        transform: scale3d(1, 1, 1);
+        transition: transform 900ms;
+      }
+
+      // --------------WOW HOVER EFFECT!
+      // a:before {
+      //   content: "";
+      //   position: absolute;
+      //   top: 0;
+      //   left: 0;
+      //   width: 100%;
+      //   height: 100%;
+      //   border-top: 1px solid black;
+      //   border-bottom: 1px solid #000;
+      //   transform: scaleY(2);
+      //   opacity: 0;
+      //   transition: 0.3s;
+      // }
+      // a:after {
+      //   content: "";
+      //   position: absolute;
+      //   top: 2px;
+      //   left: 0;
+      //   width: 100%;
+      //   height: 100%;
+      //   background-color: #262626;
+      //   transform: scale(0);
+      //   opacity: 0;
+      //   transition: 0.3s;
+      //   z-index: -1;
+      // }
+      // a:hover {
+      //   color: #fff;
+      //   &:before {
+      //     transform: scaleY(1);
+      //     opacity: 1;
+      //   }
+      //   &:after {
+      //     transform: scaleY(1);
+      //     opacity: 1;
+      //   }
+      // }
     }
   }
 }
@@ -535,7 +599,8 @@ body {
       width: 50%;
     }
     &-right {
-      height: 900px;
+      padding-top: 120px;
+      padding-bottom: 120px;
       width: 50%;
       display: flex;
       align-items: center;
@@ -841,14 +906,15 @@ body {
     max-width: 1070px;
   }
   // Header
-  .header .header-top .header-line .header-top-number .row {
-    justify-content: start;
-  }
+
   .header .header-top .header-line .header-top-menu ul li {
     margin-right: 15px;
   }
   .header .header-top .header-line .logo {
     margin-right: 30px;
+  }
+  .header .header-top .header-line-logo {
+    margin-right: 40px;
   }
   .header .header-top .header-line .header-top-group .h5 {
     font-size: 18px;
@@ -908,6 +974,9 @@ body {
   }
 
   // Header
+  .header .header-top .header-line .header-top-number .row {
+    justify-content: start;
+  }
   .header .header-top .header-line {
     justify-content: space-between;
   }
@@ -967,7 +1036,37 @@ body {
   //Footer
   // End Footer
 }
+@media (max-width: 840px) {
+  // Header
+  .header
+    .header-top
+    .header-line
+    .header-top-number
+    .header-top-group
+    .header-top-img {
+    display: none;
+  }
+  .header .header-top .header-line .header-top-number .header-top-group {
+    margin: 0px 5px;
+    padding-left: 0;
+  }
+  .header-top-group.mail {
+    display: none;
+  }
+  // End Header
 
+  // Main
+  // main-categories
+  // main-manufacturs
+  // main-slider
+  // main-object
+  // main-services
+  // main-form
+  // End Main
+
+  //Footer
+  // End Footer
+}
 @media (max-width: 768px) {
   .container {
     max-width: 670px;
@@ -1009,6 +1108,8 @@ body {
     padding-right: 20px;
     padding-left: 20px;
   }
+  .middle .main-form-right {
+  }
   // End Main
 
   //Footer
@@ -1020,6 +1121,16 @@ body {
   }
 
   // Header
+  .header .header-top .header-line {
+    justify-content: center;
+  }
+  .header-top-group.phone {
+    display: none;
+  }
+  .header .header-top .header-line-logo {
+    margin: 0px;
+  }
+
   // End Header
 
   // Main
@@ -1054,6 +1165,9 @@ body {
     display: none;
   }
   // main-form
+  .middle .main-form-right .main-form-container .main-form-h2 {
+    font-size: 2.5rem;
+  }
   // End Main
 
   //Footer
@@ -1086,6 +1200,9 @@ body {
     font-size: 1.05rem;
   }
   // Header
+  .middle .main-content-h1 {
+    font-size: 2.5rem;
+  }
   // End Header
 
   // Main
