@@ -4,8 +4,8 @@ href = "#"
 
 alt = "alt"
 
-
-адаптив {
+index.html {
+   адаптив {
    header = {
       top-header = +++++++++++++++
       bot-header = +++++++++++++++
@@ -25,14 +25,22 @@ alt = "alt"
       footer-logo = ++++++++++++++++++++
    }
 } 
+gallery.html {
+   адаптив = {
+      gallery-photo = 
+      gallery-catalog = 
+      gallery-timework = 
+   }
+
+   gallery-timework = сделать :last-child к стрелочкам
+}
 
 доработки {
    бургер = ++++++++++
    слайдер = сделать текст над кратинками (display: absolute)
    main-slider = activ повесить на выбронный елемент (код у нс-сервиса?)
 }
-
-
+}
 
 18 - пунтк ТЗ
 21 - пункт ТЗ

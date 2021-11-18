@@ -117,6 +117,23 @@ li {
 button {
   cursor: pointer; }
 
+[class*="-breadcrumbs"] {
+  text-align: center;
+  margin-top: 25px; }
+  [class*="-breadcrumbs"] a {
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+    display: inline-block;
+    opacity: 0.4; }
+  [class*="-breadcrumbs"] :last-child {
+    opacity: 1; }
+    [class*="-breadcrumbs"] :last-child i {
+      display: none; }
+  [class*="-breadcrumbs"] i {
+    margin-left: 15px;
+    margin-right: 13px; }
+
 input::-webkit-input-placeholder {
   opacity: 1;
   transition: opacity 0.3s ease; }

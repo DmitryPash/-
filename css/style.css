@@ -542,6 +542,167 @@ body {
         font-style: normal;
         font-family: "Montserrat", sans-serif;
         vertical-align: middle; }
+.middle .gallery-photo {
+  min-height: 252px;
+  display: flex;
+  align-items: center;
+  background-image: url(../images/bgc/main-manufacters.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 183px; }
+  .middle .gallery-photo-h1 {
+    text-align: center;
+    color: #ffffff; }
+.middle .gallery-catalog {
+  margin-bottom: 120px; }
+  .middle .gallery-catalog .catalog-window {
+    margin-bottom: 144px; }
+    .middle .gallery-catalog .catalog-window-h2 {
+      text-align: center;
+      text-transform: uppercase;
+      margin-bottom: 47px; }
+    .middle .gallery-catalog .catalog-window .catalog-card {
+      position: relative;
+      height: 250px;
+      max-height: 100%;
+      margin-bottom: 30px;
+      text-align: center;
+      cursor: pointer; }
+      .middle .gallery-catalog .catalog-window .catalog-card:hover .catalog-text {
+        opacity: 0.8;
+        transition: 0.3s; }
+      .middle .gallery-catalog .catalog-window .catalog-card .catalog-text {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        padding: 31px 0px;
+        color: #ffffff;
+        text-align: center;
+        background: #091d67;
+        opacity: 0;
+        transition: 0.5s; }
+    .middle .gallery-catalog .catalog-window .catalog-mr {
+      margin: 0 auto; }
+    .middle .gallery-catalog .catalog-window-btn {
+      display: block;
+      text-align: center;
+      padding: 24px;
+      border: 2px solid #1c379b;
+      font-size: 18px;
+      font-weight: 700;
+      color: #1c379b;
+      transition: 0.5s ease; }
+      .middle .gallery-catalog .catalog-window-btn i {
+        margin-left: 20px; }
+      .middle .gallery-catalog .catalog-window-btn:hover {
+        color: #ffffff;
+        background: #1c379b; }
+.middle .gallery-timework {
+  background: #1c379b;
+  padding: 120px 0px; }
+  .middle .gallery-timework-txt {
+    text-align: center;
+    margin-bottom: 50px; }
+    .middle .gallery-timework-txt .gallery-timework-h2 {
+      color: #ffffff;
+      text-transform: uppercase;
+      margin-bottom: 25px; }
+    .middle .gallery-timework-txt .gallery-timework-p {
+      color: #ffffff; }
+  .middle .gallery-timework-group {
+    width: 800px;
+    margin: 0 auto;
+    text-align: center; }
+    .middle .gallery-timework-group .timework-group-item {
+      position: relative; }
+      .middle .gallery-timework-group .timework-group-item:after {
+        content: "\f054";
+        position: absolute;
+        top: 30%;
+        left: 100%;
+        font-size: 25px;
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        color: #ffffff; }
+      .middle .gallery-timework-group .timework-group-item .timework-group-img {
+        display: inline-block;
+        height: 126px; }
+        .middle .gallery-timework-group .timework-group-item .timework-group-img img {
+          max-height: 100%; }
+      .middle .gallery-timework-group .timework-group-item .group-img-h4 {
+        text-transform: uppercase;
+        color: #ffffff; }
+    .middle .gallery-timework-group i {
+      color: #ffffff;
+      font-size: 20px; }
+.middle .prof-manufacturs {
+  min-height: 482px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 93px; }
+  .middle .prof-manufacturs-h2 {
+    color: #000;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 60px; }
+    .middle .prof-manufacturs-h2 span {
+      color: #1c379b; }
+.middle .prof-categories {
+  padding-top: 116px;
+  padding-bottom: 148px;
+  background: #f8f9ff; }
+  .middle .prof-categories-h2 {
+    text-align: center;
+    text-transform: uppercase;
+    margin-left: 120px;
+    margin-right: 120px;
+    margin-bottom: 80px; }
+    .middle .prof-categories-h2 span {
+      color: #1c379b; }
+  .middle .prof-categories .prof-categories-list {
+    font-size: 0;
+    letter-spacing: 0;
+    text-align: center; }
+    .middle .prof-categories .prof-categories-list .main-categories-item {
+      display: inline-block;
+      text-align: center;
+      width: 100%;
+      max-height: 100%;
+      padding: 25px;
+      transition: 0.5s ease;
+      border: 1px solid rgba(255, 255, 255, 0); }
+      .middle .prof-categories .prof-categories-list .main-categories-item :hover {
+        color: #1c379b; }
+      .middle .prof-categories .prof-categories-list .main-categories-item .main-categories-img {
+        height: 100px;
+        margin-bottom: 10px; }
+        .middle .prof-categories .prof-categories-list .main-categories-item .main-categories-img img {
+          max-height: 100%; }
+      .middle .prof-categories .prof-categories-list .main-categories-item .main-categories-h4 {
+        padding: 0px 10px;
+        text-transform: uppercase; }
+    .middle .prof-categories .prof-categories-list .main-categories-item:hover {
+      border: 1px solid #e5e5e5; }
+      .middle .prof-categories .prof-categories-list .main-categories-item:hover .main-categories.h4 {
+        color: #1c379b; }
+.middle .contact-prev {
+  margin-bottom: 160px; }
+  .middle .contact-prev .contact-group {
+    margin-bottom: 55px;
+    font-family: "Oswald";
+    color: #0e1636; }
+    .middle .contact-prev .contact-group .contact-h4 {
+      text-transform: uppercase; }
+    .middle .contact-prev .contact-group .contact-social {
+      margin-top: 23px; }
+      .middle .contact-prev .contact-group .contact-social a {
+        margin-right: 15px; }
+  .middle .contact-prev .contact-img {
+    height: 310px; }
+    .middle .contact-prev .contact-img img {
+      max-height: 100%; }
 
 .footer {
   width: 100%;
@@ -726,6 +887,9 @@ body {
 
   .middle .main-services .services-card-object .object-right,
   .middle .main-services .services-card-object .object-left {
+    display: none; }
+
+  .contact-img {
     display: none; } }
 @media (max-width: 840px) {
   .header
@@ -741,7 +905,10 @@ body {
     padding-left: 0; }
 
   .header-top-group.mail {
-    display: none; } }
+    display: none; }
+
+  .middle .gallery-timework-group i {
+    margin: 0 60px; } }
 @media (max-width: 768px) {
   .container {
     max-width: 670px; }
@@ -770,7 +937,10 @@ body {
 
   .middle .main-form-right .main-form-container {
     padding-right: 20px;
-    padding-left: 20px; } }
+    padding-left: 20px; }
+
+  .middle .gallery-timework-group i {
+    margin: 0 40px; } }
 @media (max-width: 576px) {
   .container {
     max-width: 470px; }
@@ -810,6 +980,9 @@ body {
 
   .middle .main-form-right .main-form-container .main-form-h2 {
     font-size: 2.5rem; }
+
+  .middle .gallery-timework-group i {
+    display: none; }
 
   .footer .footer-menu .col-footer-contact {
     margin-bottom: 30px; }

@@ -276,6 +276,7 @@ body {
 // End Header
 // Main
 .middle {
+  // index.html
   .main-content {
     display: flex;
     align-items: center;
@@ -750,6 +751,221 @@ body {
       }
     }
   }
+  // gallery.html
+  .gallery-photo {
+    min-height: 252px;
+    display: flex;
+    align-items: center;
+    background-image: url(../images/bgc/main-manufacters.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 183px;
+    &-h1 {
+      text-align: center;
+      color: #ffffff;
+    }
+  }
+  .gallery-catalog {
+    margin-bottom: 120px;
+    .catalog-window {
+      margin-bottom: 144px;
+
+      &-h2 {
+        text-align: center;
+        text-transform: uppercase;
+        margin-bottom: 47px;
+      }
+      .catalog-card {
+        position: relative;
+        height: 250px;
+        max-height: 100%;
+        margin-bottom: 30px;
+        text-align: center;
+        cursor: pointer;
+        &:hover {
+          .catalog-text {
+            opacity: 0.8;
+            transition: 0.3s;
+          }
+        }
+        .catalog-text {
+          position: absolute;
+          bottom: 0;
+          width: 100%;
+          padding: 31px 0px;
+          color: #ffffff;
+          text-align: center;
+          background: #091d67;
+          opacity: 0;
+          transition: 0.5s;
+        }
+      }
+      .catalog-mr {
+        margin: 0 auto;
+      }
+      &-btn {
+        display: block;
+        text-align: center;
+        padding: 24px;
+        border: 2px solid #1c379b;
+        font-size: 18px;
+        font-weight: 700;
+        color: #1c379b;
+        transition: 0.5s ease;
+        i {
+          margin-left: 20px;
+        }
+        &:hover {
+          color: #ffffff;
+          background: #1c379b;
+        }
+      }
+    }
+  }
+  .gallery-timework {
+    background: #1c379b;
+    padding: 120px 0px;
+    &-txt {
+      text-align: center;
+      margin-bottom: 50px;
+      .gallery-timework-h2 {
+        color: #ffffff;
+        text-transform: uppercase;
+        margin-bottom: 25px;
+      }
+      .gallery-timework-p {
+        color: #ffffff;
+      }
+    }
+    &-group {
+      width: 800px;
+      margin: 0 auto;
+      text-align: center;
+      .timework-group-item {
+        position: relative;
+        &:after {
+          content: "\f054";
+          position: absolute;
+          top: 30%;
+          left: 100%;
+
+          font-size: 25px;
+          font-family: "Font Awesome 5 Free";
+          font-weight: 900;
+          color: #ffffff;
+        }
+
+        .timework-group-img {
+          display: inline-block;
+          height: 126px;
+          img {
+            max-height: 100%;
+          }
+        }
+        .group-img-h4 {
+          text-transform: uppercase;
+          color: #ffffff;
+        }
+      }
+      i {
+        color: #ffffff;
+        font-size: 20px;
+        // margin: 0px 80px;
+      }
+    }
+  }
+  // prof-system.html
+  .prof-manufacturs {
+    min-height: 482px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 93px;
+    &-h2 {
+      color: #000;
+      text-align: center;
+      text-transform: uppercase;
+      margin-bottom: 60px;
+      span {
+        color: #1c379b;
+      }
+    }
+  }
+  .prof-categories {
+    padding-top: 116px;
+    padding-bottom: 148px;
+    background: #f8f9ff;
+    &-h2 {
+      text-align: center;
+      text-transform: uppercase;
+      margin-left: 120px;
+      margin-right: 120px;
+      margin-bottom: 80px;
+      span {
+        color: #1c379b;
+      }
+    }
+    .prof-categories-list {
+      font-size: 0;
+      letter-spacing: 0;
+      text-align: center;
+      .main-categories-item {
+        display: inline-block;
+        text-align: center;
+        width: 100%;
+        max-height: 100%;
+        padding: 25px;
+        transition: 0.5s ease;
+        border: 1px solid rgba(255, 255, 255, 0);
+
+        :hover {
+          color: #1c379b;
+        }
+        .main-categories-img {
+          height: 100px;
+          margin-bottom: 10px;
+          img {
+            max-height: 100%;
+          }
+        }
+        .main-categories-h4 {
+          padding: 0px 10px;
+          text-transform: uppercase;
+        }
+      }
+      .main-categories-item:hover {
+        border: 1px solid #e5e5e5;
+        .main-categories.h4 {
+          color: #1c379b;
+        }
+      }
+    }
+  }
+  // contact.html
+  .contact-prev {
+    margin-bottom: 160px;
+    .contact-group {
+      margin-bottom: 55px;
+      font-family: "Oswald";
+      color: #0e1636;
+      .contact-h4 {
+        text-transform: uppercase;
+      }
+      .contact-social {
+        margin-top: 23px;
+        a {
+          margin-right: 15px;
+        }
+      }
+    }
+    .contact-img {
+      height: 310px;
+      img {
+        max-height: 100%;
+      }
+    }
+  }
 }
 // End Main
 // Footer
@@ -1031,6 +1247,11 @@ body {
     display: none;
   }
   // main-form
+
+  //Contact.html
+  .contact-img {
+    display: none;
+  }
   // End Main
 
   //Footer
@@ -1063,7 +1284,10 @@ body {
   // main-services
   // main-form
   // End Main
-
+  // Gallery
+  .middle .gallery-timework-group i {
+    margin: 0 60px;
+  }
   //Footer
   // End Footer
 }
@@ -1111,7 +1335,10 @@ body {
   .middle .main-form-right {
   }
   // End Main
-
+  // Gallery
+  .middle .gallery-timework-group i {
+    margin: 0 40px;
+  }
   //Footer
   // End Footer
 }
@@ -1169,7 +1396,10 @@ body {
     font-size: 2.5rem;
   }
   // End Main
-
+  // Gallery
+  .middle .gallery-timework-group i {
+    display: none;
+  }
   //Footer
   .footer .footer-menu .col-footer-contact {
     margin-bottom: 30px;
