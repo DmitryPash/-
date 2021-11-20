@@ -5,6 +5,7 @@ $fontSize: 16px;
 $ffOswald: "Oswald", sans-serif;
 $ffMontserrat: "Montserrat", sans-serif;
 $colorBlue: #0e1636;
+$colorTitle: #1c379b;
 // Mixin fucntion
 @function calculateRem($size) {
   $remSize: $size / 16px;
@@ -321,7 +322,7 @@ body {
       margin-right: 120px;
       margin-bottom: 80px;
       span {
-        color: #1c379b;
+        color: $colorTitle;
       }
     }
     .main-categories-list {
@@ -414,7 +415,7 @@ body {
         text-align: center;
         margin-bottom: 25px;
         span {
-          color: #1c379b;
+          color: $colorTitle;
         }
       }
       &-p {
@@ -520,7 +521,7 @@ body {
         text-transform: uppercase;
         margin-bottom: 25px;
         span {
-          color: #1c379b;
+          color: $colorTitle;
         }
       }
       .main-services-p {
@@ -888,7 +889,7 @@ body {
       text-transform: uppercase;
       margin-bottom: 60px;
       span {
-        color: #1c379b;
+        color: $colorTitle;
       }
     }
   }
@@ -903,7 +904,7 @@ body {
       margin-right: 120px;
       margin-bottom: 80px;
       span {
-        color: #1c379b;
+        color: $colorTitle;
       }
     }
     .prof-categories-list {
@@ -963,6 +964,288 @@ body {
       height: 310px;
       img {
         max-height: 100%;
+      }
+    }
+  }
+  // Services.html
+  .services-title {
+    min-height: 800px;
+    width: 100%;
+    display: flex;
+    // align-items: center;
+    background-image: url(../images/bgc/service-bcg.png);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 120px;
+    &-left {
+      padding-bottom: 140px;
+      width: 60%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      background-color: #091d67d2;
+      .services-title-box {
+        width: 70%;
+        margin: 0 auto;
+        .gallery-photo-breadcrumbs {
+          text-align: left;
+          margin-bottom: 45px;
+        }
+        .services-title-txt {
+          .services-title-h1 {
+            text-transform: uppercase;
+            color: #ffffff;
+            margin-bottom: 50px;
+          }
+          .services-title-p {
+            line-height: 26px;
+            color: #ffffff;
+            margin-bottom: 25px;
+          }
+          .services-title-btn {
+            color: #1c379b;
+            font-size: 18px;
+            font-weight: 700;
+            padding: 24px 28px;
+            background: #ffffff;
+            border: 1px solid transparent;
+            transition: 0.3s ease;
+            margin-top: 80px;
+            &:hover {
+              background: #1c379b;
+              color: #ffffff;
+              border: 1px solid #ffffff;
+            }
+          }
+        }
+      }
+    }
+    &-right {
+      height: 100%;
+      width: 40%;
+    }
+  }
+  .services-items {
+    margin-bottom: 150px;
+    &-h2 {
+      text-align: center;
+      text-transform: uppercase;
+      // margin-bottom: 64px;
+      margin: 0px 80px 64px;
+      span {
+        color: $colorTitle;
+      }
+    }
+    .services-items-catalog {
+      .services-cards {
+        display: block;
+        border: 1px solid #1c389b1a;
+        text-align: center;
+        padding: 70px 0px;
+        margin-bottom: 30px;
+
+        &:hover {
+          .services-cards-img {
+            transform: scale(1.1);
+          }
+        }
+        &-img {
+          height: 220px;
+          margin-bottom: 40px;
+          transition: 0.5s ease;
+          img {
+            max-height: 100%;
+          }
+        }
+
+        &-p {
+          margin-bottom: 5px;
+        }
+        &-h4 {
+          margin-bottom: 3px;
+          text-transform: uppercase;
+          span {
+            color: #435cb4;
+          }
+        }
+      }
+    }
+  }
+  .service-timework {
+    background-image: url(../images/bgc/work.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 120px;
+  }
+  .services-window {
+    margin-bottom: 150px;
+    &-h2 {
+      text-align: center;
+      text-transform: uppercase;
+      span {
+        color: $colorTitle;
+      }
+    }
+    &-block {
+      .window-block-description {
+        line-height: 25.6px;
+        margin-bottom: 50px;
+        &-h3 {
+          margin-bottom: 20px;
+        }
+        .window-block-links {
+          margin-top: 30px;
+        }
+
+        .window-block-links a {
+          display: inline-block;
+
+          padding: 4px 14px 4px 14px;
+          background: #eff2ff;
+          color: #1c379b;
+          font-weight: 500;
+
+          margin-bottom: 10px;
+          margin-right: 10px;
+          border: 1px solid transparent;
+        }
+
+        .window-block-links a:hover {
+          border: 1px solid #1c379b;
+        }
+      }
+      .window-block-img {
+        text-align: end;
+      }
+      .left {
+        text-align: start;
+      }
+    }
+    &-btn {
+      text-align: center;
+      margin-top: 115px;
+      a {
+        margin-right: 30px;
+      }
+    }
+  }
+  .services-ways {
+    background-color: #f8f9ff;
+    padding: 120px 60px;
+    margin-bottom: 140px;
+    .services-ways-txt {
+      .ways-txt-h2 {
+        text-transform: uppercase;
+      }
+      div {
+        margin-bottom: 25px;
+        padding-right: 20px;
+      }
+    }
+    .services-ways-img {
+      height: 220px;
+      text-align: center;
+      img {
+        max-height: 100%;
+      }
+    }
+  }
+  .services-setting {
+    .services-setting-card {
+      
+      margin-bottom: 30px;
+      display: inline-block;
+      position: relative;
+      .setting-card-title {
+        position: absolute;
+        font-size: 16px;
+        color: #ffffff;
+        font-weight: 600;
+        padding: 18px 29px;
+        background-color: #1c379b;
+      }
+      .setting-card-text {
+        position: absolute;
+        padding: 50px;
+        top: 15%;
+        font-size: 16px;
+        line-height: 25.6px;
+        color: #ffffff;
+        opacity: 0;
+        transition: 0.5s ease;
+        &:hover {
+          opacity: 1;
+        }
+      }
+      
+    }
+    &-h2 {
+      margin-bottom: 60px;
+      text-align: center;
+      text-transform: uppercase;
+      span{
+        color:$colorTitle;
+      }
+    }
+  }
+  .services-slider {
+    background-color: #F8F9FF;
+padding: 120px 50px;
+    .slider-title-p {
+      line-height: 25,6px;
+      padding: 0 25%;
+    }
+  }
+  .services-color {
+    &-title {
+      margin-bottom: 100px;
+      text-align: center;
+      .services-color-h2 {
+        text-transform: uppercase;
+        margin-bottom: 30px;
+        span {
+          color: $colorTitle;
+        }
+      }
+      .services-color-p {
+        padding: 0px 32%;
+      }
+    }
+    .services-color-card {
+      line-height: 26px;
+      margin-bottom: 30px;
+      .services-color-h4 {
+        text-transform: uppercase;
+        margin-bottom: 20px;
+      }
+      .services-color-group {
+        margin-top: 20px;
+        .color-group-pick {
+          display: inline-block;
+          padding: 15px;
+          opacity: 0.25;
+          transition: 0.4s ease;
+          margin-right: 10px;
+          &:hover {
+            opacity: 1;
+          }
+        }
+        .red {
+          background-color: #fc3d49;
+        }
+        .yellow {
+          background-color: #ffcf55;
+        }
+        .green {
+          background-color: #13b236;
+        }
+        .blue {
+          background-color: #3d67fc;
+        }
       }
     }
   }
@@ -1111,6 +1394,12 @@ body {
   // main-object
   // main-services
   // main-form
+  // Service.html 
+  .middle .services-setting .services-setting-card .setting-card-text {
+   padding: 0px;
+    padding-left: 30px;
+    padding-top: 30px;
+  }
   // End Main
 
   //Footer
@@ -1163,6 +1452,13 @@ body {
   .middle .main-form-right {
     width: 100%;
   }
+  // Services.html 
+  .middle .services-setting .services-setting-card .setting-card-text {
+    padding: 0px;
+     padding-left: 30px;
+     padding-top: 10px;
+     line-height: 21px;
+   }
   // End Main
 
   //Footer
@@ -1192,6 +1488,7 @@ body {
   // Header
   .header .header-top .header-line .header-top-number .row {
     justify-content: start;
+
   }
   .header .header-top .header-line {
     justify-content: space-between;
@@ -1252,6 +1549,28 @@ body {
   .contact-img {
     display: none;
   }
+  //Services.html 
+  .middle .services-title-left {
+    flex: 0 0 100%;
+  }
+  .middle .services-ways .services-ways-img {
+    margin-top: 50px;
+  }
+
+  .services-setting-box {
+    display: flex;
+    justify-content: center;
+  }
+   .middle .services-setting .services-setting-card .setting-card-text {
+    padding: 50px;
+     line-height: 26.5px;
+   }
+   .middle .services-slider .slider-title-p {
+     padding: 0 20%;
+   }
+   .middle .services-color-title .services-color-p {
+    padding: 0px 22%;
+   }
   // End Main
 
   //Footer
@@ -1284,9 +1603,12 @@ body {
   // main-services
   // main-form
   // End Main
-  // Gallery
+  // Gallery.html
   .middle .gallery-timework-group i {
     margin: 0 60px;
+  }
+  .middle .gallery-timework-group {
+    width: 100%;
   }
   //Footer
   // End Footer
@@ -1296,6 +1618,12 @@ body {
     max-width: 670px;
   }
   // Header
+  .header .header-top .header-line .header-top-number .header-top-group span {
+    display: none;
+  }
+  .header .header-top .header-line .header-top-number .row {
+    justify-content: space-around;
+  }
   // End Header
 
   // Main
@@ -1334,6 +1662,28 @@ body {
   }
   .middle .main-form-right {
   }
+  //Services.html 
+  .services-title-h1 {
+    font-size: 2.75rem;
+  }
+  .middle .services-title-left .services-title-box {
+    width: 100%;
+  }
+  .middle .services-window-block .window-block-img {
+    display: none;
+  }
+  .middle .services-window-btn {
+    margin-top: 0;
+  }
+  .middle .services-slider .slider-title-p {
+    padding: 0 10%;
+  }
+  .middle .services-color-title .services-color-p {
+    padding: 0px 12%;
+   }
+   .services-color-img {
+     display: none;
+   }
   // End Main
   // Gallery
   .middle .gallery-timework-group i {
@@ -1346,21 +1696,14 @@ body {
   .container {
     max-width: 470px;
   }
-
   // Header
-  .header .header-top .header-line {
-    justify-content: center;
-  }
-  .header-top-group.phone {
-    display: none;
-  }
-  .header .header-top .header-line-logo {
-    margin: 0px;
-  }
-
   // End Header
 
   // Main
+  // prof-system.html 
+  .middle .prof-categories-h2 {
+    margin: 0;
+  }
   // main-content
   .main-content {
     text-align: center;
@@ -1395,11 +1738,45 @@ body {
   .middle .main-form-right .main-form-container .main-form-h2 {
     font-size: 2.5rem;
   }
-  // End Main
-  // Gallery
+  // Services.html 
+  .middle .gallery-timework-group .timework-group-item .group-img-h4 {
+    font-size: 1.1rem;
+  }
+ 
+.middle .gallery-timework-group .timework-group-item:after {
+  display: none;
+}
+  .header-top-group.phone {
+    display: none;
+  }
+  .header .header-top .header-line-logo {
+    margin: 0px;
+  }
+  .header .header-top .header-line .header-top-number {
+    display: none;
+  }
+  .middle .services-setting .services-setting-card .setting-card-text {
+    padding: 0px;
+     padding-left: 30px;
+     padding-top: 10px;
+     line-height: 18px;
+   }
+   .middle .services-setting .services-setting-card .setting-card-title {
+    padding: 10px 10px;
+   }
+   .middle .services-slider .slider-title-p {
+    padding: 0;
+  }
+  .middle .services-color-title .services-color-p {
+    padding: 0;
+   }
+  // Gallery.html
   .middle .gallery-timework-group i {
     display: none;
   }
+  .middle .gallery-photo-h1
+  // End Main
+  
   //Footer
   .footer .footer-menu .col-footer-contact {
     margin-bottom: 30px;
@@ -1447,8 +1824,32 @@ body {
   // main-object
   // main-services
   // main-form
+
+  // Services.html 
+  .middle .services-items-h2 {
+    margin: 0px 0px 60px;
+  }
+  .middle .services-ways .services-ways-txt .ways-txt-h2 {
+    font-size: 2.275rem;
+  }
+  .middle .services-setting .services-setting-card .setting-card-text {
+    font-size: 14px;
+   }
+  //  Gallery.html 
+  .middle .gallery-photo-h1 {
+    font-size: 3.35rem;
+  }
   // End Main
 
   //Footer
   // End Footer
+
+
+  // UI.css 
+  .ui-btn-blue {
+    width: 250px;
+  }
+  .ui-btn-white {
+    width: 250px;
+  }
 }

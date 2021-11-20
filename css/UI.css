@@ -54,7 +54,7 @@ h2,
   font-size: 2.875rem;
   color: #0e1636; }
 
-[calss*="-h3"] {
+[class*="-h3"] {
   font-family: "Oswald", sans-serif;
   font-weight: 500;
   font-size: 32px;
@@ -116,6 +116,40 @@ li {
 
 button {
   cursor: pointer; }
+
+.ui-btn-blue {
+  display: inline-block;
+  height: 70px;
+  width: 355px;
+  line-height: 70px;
+  font-weight: 700;
+  font-style: 18px;
+  background-color: #1c379b;
+  color: #fff;
+  border: 1px solid transparent;
+  transition: 0.5s ease;
+  margin: 10px; }
+  .ui-btn-blue:hover {
+    background-color: #fff;
+    border: 1px solid #1c379b; }
+
+.ui-btn-white {
+  display: inline-block;
+  height: 70px;
+  width: 355px;
+  line-height: 70px;
+  background-color: #fff;
+  border: 1px solid #1c379b;
+  font-weight: 700;
+  font-style: 18px;
+  color: #1c379b;
+  text-align: center;
+  transition: 0.5s ease;
+  margin: 10px; }
+  .ui-btn-white:hover {
+    background-color: #1c379b;
+    color: #fff;
+    border: 1px solid transparent; }
 
 [class*="-breadcrumbs"] {
   text-align: center;
@@ -190,6 +224,11 @@ input:focus:-ms-input-placeholder {
   -ms-flex-align: center;
   -ms-align-items: center;
   align-items: center; }
+
+.justify-center {
+  -webkit-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center; }
 
 [class*="col-"] {
   width: 100%;

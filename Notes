@@ -27,20 +27,26 @@ index.html {
 } 
 gallery.html {
    адаптив = {
-      gallery-photo = 
-      gallery-catalog = 
-      gallery-timework = 
+      gallery-photo = ++
+      gallery-catalog = ++
+      gallery-timework = ++
    }
 
    gallery-timework = сделать :last-child к стрелочкам
+}
+services.html {
+   slider - ?
+   карточки затемнение - ?
+   Адаптив - ++++++++++++
 }
 
 доработки {
    бургер = ++++++++++
    слайдер = сделать текст над кратинками (display: absolute)
    main-slider = activ повесить на выбронный елемент (код у нс-сервиса?)
-}
-}
+   padding = всем текстам??
+   color = переделать на миксин ++
+   }
 
 18 - пунтк ТЗ
 21 - пункт ТЗ

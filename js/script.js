@@ -1,7 +1,6 @@
 // drop Menu - Burger
 let flag = false;
 $(".header-menu-toggle").click(function () {
-  console.log("zxc");
   if (!flag) {
     $(".header-menu").slideDown(200);
   } else {
@@ -38,7 +37,7 @@ $(document).ready(function () {
   });
 
   $(document).on("click", ".slider-nav-link", function (e) {
-    console.log("asdasd");
+   
 
     e.preventDefault();
     const index = +$(this).attr("data-index");
