@@ -303,7 +303,7 @@ body {
       display: inline-block;
       padding: 24px 64px;
       font-family: $ffMontserrat;
-      font-size: 18px;
+      @include fontSize(18px);
       font-weight: 700;
       border: none;
       background-color: #1c379b;
@@ -432,9 +432,9 @@ body {
         justify-content: center;
       }
       .slider-nav-link {
-        font-family: "Oswald", sans-serif;
+        font-family: $ffOswald;
         font-weight: 400;
-        font-size: 24px;
+        @include fontSize(24px);
         color: #1c379b;
         opacity: 30%;
         text-transform: uppercase;
@@ -455,7 +455,7 @@ body {
       right: 5%;
       z-index: 1;
       .prev-arrow {
-        font-size: 35px;
+        @include fontSize(35px);
         color: #ffffff;
         background-color: #1c379b;
         height: 58px;
@@ -527,8 +527,8 @@ body {
       }
       .main-services-p {
         text-align: center;
-        color: #0e1636;
-        font-size: 18px;
+        color: $colorBlue;
+        @include fontSize(18px);
         padding-right: 25px;
       }
     }
@@ -709,7 +709,7 @@ body {
             color: #ffffff;
             background: transparent;
             font-family: $ffOswald;
-            font-size: 18px;
+            @include fontSize(18px);
             line-height: 30px;
             padding: 10px;
           }
@@ -724,7 +724,7 @@ body {
           height: 70px;
           border: none;
           margin-bottom: 40px;
-          font-size: 18px;
+          @include fontSize(18px);
           font-weight: 700;
           color: #1c379b;
           transition: 0.5s ease;
@@ -744,7 +744,7 @@ body {
             margin-right: 20px;
           }
           span {
-            font-size: 14px;
+            @include fontSize(14px);
             color: #ffffff;
             font-weight: 500;
             font-style: normal;
@@ -814,7 +814,7 @@ body {
         text-align: center;
         padding: 24px;
         border: 2px solid #1c379b;
-        font-size: 18px;
+        @include fontSize(18px);
         font-weight: 700;
         color: #1c379b;
         transition: 0.5s ease;
@@ -858,7 +858,7 @@ body {
           top: 30%;
           left: 100%;
 
-          font-size: 25px;
+          @include fontSize(25px);
           font-family: "Font Awesome 5 Free";
           font-weight: 900;
           color: #ffffff;
@@ -878,7 +878,7 @@ body {
       }
       i {
         color: #ffffff;
-        font-size: 20px;
+        @include fontSize(20px);
         
       }
 
@@ -957,8 +957,8 @@ body {
     margin-bottom: 160px;
     .contact-group {
       margin-bottom: 55px;
-      font-family: "Oswald";
-      color: #0e1636;
+      font-family: $ffOswald;
+      color: $colorBlue;
       .contact-h4 {
         text-transform: uppercase;
       }
@@ -1016,7 +1016,7 @@ body {
           }
           .services-title-btn {
             color: #1c379b;
-            font-size: 18px;
+            @include fontSize(18px);
             font-weight: 700;
             padding: 24px 28px;
             background: #ffffff;
@@ -1173,7 +1173,7 @@ body {
       position: relative;
       .setting-card-title {
         position: absolute;
-        font-size: 16px;
+        @include fontSize(16px);
         color: #ffffff;
         font-weight: 600;
         padding: 18px 29px;
@@ -1183,7 +1183,7 @@ body {
         position: absolute;
         padding: 50px;
         top: 15%;
-        font-size: 16px;
+        @include fontSize(16px);
         line-height: 25.6px;
         color: #ffffff;
         opacity: 0;
@@ -1320,7 +1320,7 @@ padding: 120px 50px;
 
       .footer-menu-p {
         color: #ffffff4b;
-        font-size: 13px;
+        @include fontSize(13px);
         line-height: 16px;
         margin-bottom: 45px;
       }
@@ -1342,7 +1342,7 @@ padding: 120px 50px;
           padding-right: 20px;
           white-space: nowrap;
           a {
-            font-size: 14px;
+            @include fontSize(14px);
             color: #ffffff;
           }
           a:hover {
@@ -1352,7 +1352,7 @@ padding: 120px 50px;
       }
       .footer-list-p {
         color: #ffffff56;
-        font-size: 13px;
+        @include fontSize(13px);
         text-align: end;
       }
     }
@@ -1433,7 +1433,7 @@ padding: 120px 50px;
     margin-right: 40px;
   }
   .header .header-top .header-line .header-top-group .h5 {
-    font-size: 18px;
+    @include fontSize(18px);
   }
   .header .header-top .header-line .header-top-number .header-top-group {
     margin-left: 0;
@@ -1660,7 +1660,7 @@ padding: 120px 50px;
     display: none;
   }
   .middle .main-slider .arrow .prev-arrow {
-    font-size: 30px;
+    @include fontSize(30px);
     height: 50px;
     width: 51px;
   }
@@ -1736,7 +1736,7 @@ padding: 120px 50px;
   }
   // main-slider
   .middle .main-slider .arrow .prev-arrow {
-    font-size: 28px;
+    @include fontSize(28px);
     height: 45px;
     width: 46px;
   }
@@ -1844,7 +1844,7 @@ padding: 120px 50px;
     font-size: 2.275rem;
   }
   .middle .services-setting .services-setting-card .setting-card-text {
-    font-size: 14px;
+    @include fontSize(14px);
    }
   //  Gallery.html 
   .middle .gallery-photo-h1 {
