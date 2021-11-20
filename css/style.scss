@@ -847,6 +847,9 @@ body {
       width: 800px;
       margin: 0 auto;
       text-align: center;
+      :last-child .col-4:last-child .timework-group-item::after{
+       content: "";
+      }
       .timework-group-item {
         position: relative;
         &:after {
@@ -878,6 +881,8 @@ body {
         font-size: 20px;
         
       }
+
+      
     }
   }
   

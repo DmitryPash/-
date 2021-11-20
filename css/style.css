@@ -618,6 +618,8 @@ body {
     width: 800px;
     margin: 0 auto;
     text-align: center; }
+    .middle .gallery-timework-group :last-child .col-4:last-child .timework-group-item::after {
+      content: ""; }
     .middle .gallery-timework-group .timework-group-item {
       position: relative; }
       .middle .gallery-timework-group .timework-group-item:after {
