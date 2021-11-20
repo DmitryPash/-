@@ -184,7 +184,8 @@ body {
   padding-top: 100px;
   margin-bottom: 183px; }
   .middle .main-content-h1 {
-    width: 45%;
+    flex: 0 0 45%;
+    max-width: 45%;
     margin-bottom: 36px;
     text-transform: uppercase; }
   .middle .main-content-p {
@@ -420,11 +421,13 @@ body {
   background-size: cover; }
   .middle .main-form-left {
     height: 900px;
-    width: 50%; }
+    flex: 0 0 50%;
+    max-width: 50%; }
   .middle .main-form-right {
     padding-top: 120px;
     padding-bottom: 120px;
-    width: 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
     display: flex;
     align-items: center;
     background-color: #091d67c0; }
@@ -715,7 +718,8 @@ body {
   margin-bottom: 120px; }
   .middle .services-title-left {
     padding-bottom: 140px;
-    width: 60%;
+    flex: 0 0 60%;
+    max-width: 60%;
     height: 100%;
     display: flex;
     align-items: center;
@@ -749,7 +753,8 @@ body {
           border: 1px solid #ffffff; }
   .middle .services-title-right {
     height: 100%;
-    width: 40%; }
+    flex: 0 0 40%;
+    max-width: 40%; }
 .middle .services-items {
   margin-bottom: 150px; }
   .middle .services-items-h2 {

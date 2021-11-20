@@ -291,7 +291,8 @@ body {
     margin-bottom: 183px;
 
     &-h1 {
-      width: 45%;
+      flex: 0 0 45%;
+      max-width: 45%;
       margin-bottom: 36px;
       text-transform: uppercase;
     }
@@ -598,12 +599,14 @@ body {
     background-size: cover;
     &-left {
       height: 900px;
-      width: 50%;
+      flex: 0 0 50%;
+      max-width: 50%;
     }
     &-right {
       padding-top: 120px;
       padding-bottom: 120px;
-      width: 50%;
+      flex: 0 0 50%;
+      max-width: 50%;
       display: flex;
       align-items: center;
       background-color: #091d67c0;
@@ -873,10 +876,11 @@ body {
       i {
         color: #ffffff;
         font-size: 20px;
-        // margin: 0px 80px;
+        
       }
     }
   }
+  
   // prof-system.html
   .prof-manufacturs {
     min-height: 482px;
@@ -981,7 +985,8 @@ body {
     margin-bottom: 120px;
     &-left {
       padding-bottom: 140px;
-      width: 60%;
+      flex: 0 0 60%;
+      max-width: 60%;;
       height: 100%;
       display: flex;
       align-items: center;
@@ -1024,7 +1029,8 @@ body {
     }
     &-right {
       height: 100%;
-      width: 40%;
+      flex: 0 0 40%;
+      max-width: 40%;
     }
   }
   .services-items {
