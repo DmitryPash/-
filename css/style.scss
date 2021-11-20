@@ -1461,7 +1461,8 @@ padding: 120px 50px;
     display: none;
   }
   .middle .main-form-right {
-    width: 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
   }
   // Services.html 
   .middle .services-setting .services-setting-card .setting-card-text {
